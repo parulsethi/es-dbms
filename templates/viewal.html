@@ -1,0 +1,12 @@
+<!doctype html>
+<title>All files</title>
+<h1>All Files</h1>
+<table>
+{% for key in allfiles %}
+   <tr>
+        <th> <a href="{{ url_for('uploaded_file', filename=key)}}">{{key}}</a> </th>
+        
+   </tr>
+{% endfor %}
+
+</table>
